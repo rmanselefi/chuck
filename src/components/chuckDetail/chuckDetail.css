@@ -80,6 +80,28 @@
   width: 100%;
 }
 
+.like-icon {
+  width: 50%;
+  float: left;
+}
+
+.unlike-icon {
+  width: 50%;
+  float: left;
+}
+
+.like-counter {
+  color: green;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+.unlike-counter {
+  color: red;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
 @media only screen and (min-width: 768px) {
   .col {
     grid-column: span 6;

@@ -62,6 +62,25 @@
   height: 20px;
   width: 100%;
 }
+.like-icon {
+  width: 50%;
+  float: left;
+}
+.unlike-icon {
+  width: 50%;
+  float: left;
+}
+.like-counter{
+    color: green;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.unlike-counter{
+    color: red;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
 
 @media only screen and (min-width: 768px) {
   .col {
@@ -84,7 +103,7 @@
     width: 100px;
     float: left;
   }
-  .grid{
+  .grid {
     grid-template-rows: repeat(0, 1fr);
   }
 }

@@ -112,11 +112,11 @@
   grid-column: span 3;
 }
 .card {
-  width: 250px;
+  width: 300px;
   height: 200px;
-  //   border: 0.5px solid rgb(185, 179, 179);
+  border: 0.5px solid rgb(214, 209, 209);
   background-color: white;
-  box-shadow: 2px 2px 2px 2px rgba(107, 105, 105, 0.3);
+  // box-shadow: 2px 2px 2px 2px rgba(107, 105, 105, 0.3);
 }
 .joke-title {
   margin: 5px 5px 5px 5px;
@@ -125,14 +125,26 @@
 .joke-value {
   font-size: 12px;
   margin: 5px 5px 5px 5px;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 130px;
 }
 .load-more-button {
   display: flex;
   justify-content: baseline;
 }
 .joke-link {
-  display: flex;
-  justify-content: center;
+  height: 100px;
+  vertical-align: bottom;
+  float: right;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
 }
 .btn {
   background-color: transparent;
@@ -162,6 +174,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .grid {
+    grid-template-rows: repeat(0, 1fr);
   }
 }
 

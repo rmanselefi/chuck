@@ -3,8 +3,11 @@ import axios from "axios";
 import "./chuckList.css";
 import down from "../../assets/assets_Homework_Front-End_01/path-copy-7@2x.png";
 import right from "../../assets/assets_Homework_Front-End_01/path-copy-3@2x.png";
+import volt from "../../assets/assets_Homework_Front-End_02/red-light@2x.png";
+
 import Jumbotron from "../layouts/jumbotron/jumbotron";
-import { Navigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import Footer from "../layouts/footer/footer";
 
 function ChuckList() {
   const [jokes, setJokes] = useState([]);
@@ -22,7 +25,7 @@ function ChuckList() {
         (filt) => filt.categories[0] === category
       );
       setJokes(filteres);
-      setJokesList(res.data.result)
+      setJokesList(res.data.result);
     } catch (e) {}
   };
 
@@ -96,6 +99,7 @@ function ChuckList() {
               <div className="col" key={key}>
                 <div className="card">
                   <div className="joke-title">
+                    <img src={volt} alt="notify" height="17px" width="13px" />{" "}
                     {joke.categories[0]?.toUpperCase()} JOKES
                   </div>
                   <div className="joke-value">{joke.value}</div>
@@ -128,7 +132,7 @@ function ChuckList() {
             );
           })}
         </div>
-        <br/>
+        <br />
         <div className="grid">
           <div className="col"></div>
           <div className="load-more-button col">
@@ -148,7 +152,7 @@ function ChuckList() {
         </div>
       </div>
 
-      <div className="footer"></div>
+      <Footer/>
     </div>
   );
 }

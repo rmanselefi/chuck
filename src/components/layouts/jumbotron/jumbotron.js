@@ -34,6 +34,9 @@ function Jumbotron(props) {
             />
           );
         }}
+        renderMenu={(items,val,style)=>{
+          return <div className="auto-complete" children={items}/>
+        }}
         value={value}
         onChange={(e) => setValue(e.target.value)}
         onSelect={(val) => setValue(val)}

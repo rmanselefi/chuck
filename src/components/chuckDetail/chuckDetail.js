@@ -43,8 +43,15 @@ function ChuckDetail(props) {
 
             <div className="paginate">
               <div className="like">
-                <FaRegThumbsUp className="thumbs-up" />
-                <FaRegThumbsDown className="thumbs-down" />
+                <div className="like-icon">
+                  <FaRegThumbsUp className="thumbs-up" /> <br />
+                  <span className="like-counter">52</span>
+                </div>
+                <div className="unlike-icon">
+                  <FaRegThumbsDown className="thumbs-down" />
+                  <br />
+                  <span className="unlike-counter">54</span>
+                </div>
               </div>
               <div className="paginate-btn">
                 <button className="cat-loadmore prev">
