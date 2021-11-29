@@ -1,0 +1,111 @@
+.detail {
+  margin: 20px 20px 20px 20px;
+}
+
+.row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 150px;
+}
+
+.det {
+  width: 40%;
+}
+
+.thumbs-up {
+  margin-left: 10px;
+  border-radius: 30px;
+  background-color: green;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+
+.thumbs-down {
+  margin-left: 10px;
+  border-radius: 30px;
+  background-color: red;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+}
+
+.paginate {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.paginate-btn {
+  width: 300px;
+  float: left;
+}
+
+.like {
+  width: 150px;
+  float: left;
+}
+
+.prev {
+  margin-right: 10px;
+}
+
+.prev-img {
+  float: left;
+}
+
+.detaill {
+  width: 420px;
+}
+
+.top {
+  margin-bottom: 5px;
+  width: 100%;
+  height: 244px;
+}
+
+.top-link {
+  color: #504d4d;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.top-list {
+  margin-left: 10px;
+}
+
+.top-li {
+  height: 20px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .col {
+    grid-column: span 6;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .col {
+    grid-column: span 3;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .row {
+    margin-left: 10px;
+  }
+  .detaill {
+    width: 360px;
+  }
+  .like {
+    width: 100px;
+    float: left;
+  }
+  .grid {
+    -ms-grid-rows: (1fr)[0];
+        grid-template-rows: repeat(0, 1fr);
+  }
+}
+/*# sourceMappingURL=chuckDetail.css.map */

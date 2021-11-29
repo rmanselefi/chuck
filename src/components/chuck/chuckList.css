@@ -1,0 +1,222 @@
+.section-body {
+  padding: 50px 50px 50px 50px;
+  background-color: #efeff7;
+}
+
+.category {
+  display: inline-block;
+}
+
+.categories {
+  text-align: center;
+  width: 150px;
+  font-size: 12px;
+  cursor: pointer;
+  border: 0;
+  height: 30px;
+  color: white;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.animal {
+  background-color: #f51331;
+}
+
+.career {
+  background-color: #dd4e0b;
+}
+
+.celebrity {
+  background-color: #f7a934;
+}
+
+.dev {
+  background-color: #eeee33;
+  color: black;
+}
+
+.explicit {
+  background-color: #62f062;
+}
+
+.fashion {
+  background-color: #8bc48b;
+}
+
+.food {
+  background-color: #7d7dee;
+}
+
+.history {
+  background-color: #f51331;
+}
+
+.money {
+  background-color: #dd4e0b;
+}
+
+.movie {
+  background-color: #f7a934;
+}
+
+.political {
+  background-color: #eeee33;
+  color: black;
+}
+
+.religion {
+  background-color: #62f062;
+}
+
+.science {
+  background-color: #8bc48b;
+}
+
+.sport {
+  background-color: #7d7dee;
+}
+
+.travel {
+  background-color: #eeee33;
+  color: black;
+}
+
+.music {
+  background-color: #f7a934;
+}
+
+.cat-loadmore {
+  background-color: transparent;
+  border: 1px solid #cac086;
+  height: 30px;
+  width: 130px;
+  text-align: center;
+  font-size: 12px;
+  color: #cac086;
+  cursor: pointer;
+}
+
+.load-more-img {
+  float: right;
+}
+
+.selected {
+  background-color: #7cdf7c;
+  margin-top: 25px;
+  width: 100px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+}
+
+.col {
+  grid-column: span 3;
+}
+
+.card {
+  width: 250px;
+  height: 200px;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(107, 105, 105, 0.3);
+          box-shadow: 2px 2px 2px 2px rgba(107, 105, 105, 0.3);
+}
+
+.joke-title {
+  margin: 5px 5px 5px 5px;
+}
+
+.joke-value {
+  font-size: 12px;
+  margin: 5px 5px 5px 5px;
+}
+
+.load-more-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+.joke-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  height: 30px;
+  width: 130px;
+  text-align: center;
+  font-size: 12px;
+  color: #cac086;
+  cursor: pointer;
+}
+
+.footer {
+  height: 200px;
+  background-image: url("../../assets/assets_Homework_Front-End_02/bitmap-copy.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+  .col {
+    grid-column: span 12;
+  }
+  .card {
+    width: 100%;
+  }
+  .load-more-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .col {
+    grid-column: span 6;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .col {
+    grid-column: span 3;
+  }
+}
+/*# sourceMappingURL=chuckList.css.map */

@@ -1,0 +1,57 @@
+.content {
+    
+    height: 250px;
+    background: url("../../../assets/assets_Homework_Front-End_01/bitmap.png");
+    
+  }
+  .title {
+    color: #ddcb61;
+    padding: 0px;
+  }
+  .description {
+    color: white;
+    padding: 0px;
+  }
+  input[type="text"] {
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: transparent;
+    background-image: url("../../../assets/assets_Homework_Front-End_01/search-copy.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 12px 10px 12px 20px;
+    margin-left: 500px;
+    color: white;
+  }
+
+  @media only screen and (max-width: 600px) {
+    input[type="text"] {
+        width: 100%;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: transparent;
+        background-image: url("../../../assets/assets_Homework_Front-End_01/search-copy.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        padding: 12px 10px 12px 20px;
+        margin-left: 50px;
+        color: white;
+      }
+}
+@media only screen and (min-width: 768px) {
+    input[type="text"] {
+        width: 100%;
+        margin-left: 200px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    input[type="text"] {
+        width: 50%;
+        margin-left: 500px;
+    }
+}

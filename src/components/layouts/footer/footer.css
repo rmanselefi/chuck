@@ -1,0 +1,13 @@
+.footer {
+  height: 200px;
+  background-image: url("../../../assets/assets_Homework_Front-End_02/bitmap-copy.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    height: 100px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */
